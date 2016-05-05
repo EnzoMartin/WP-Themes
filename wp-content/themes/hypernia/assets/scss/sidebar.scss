@@ -1,0 +1,36 @@
+aside {
+    border: 1px solid #e3e3e3;
+    margin-top: 20px;
+
+    .sidebar-image {
+        margin-left: -15px;
+        margin-bottom:15px;
+        width: 388px;
+        border-bottom: 4px solid #a4373f;
+    }
+
+    .sidebar-footer {
+        margin-left: -15px;
+        width: 388px;
+        background-color: #ededed;
+        padding: 15px;
+        font-size: 11px;
+        text-align: center;
+
+        a {
+            font-style: italic;
+        }
+    }
+
+    .widget {
+        padding-bottom: 10px;
+    }
+
+    .sidebar-title {
+        font-size: 30px;
+        color:#a4373f;
+        margin: 0 0 15px;
+        border-bottom: 1px solid #e3e3e3;
+        padding-bottom: 15px;
+    }
+}

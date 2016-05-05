@@ -1,0 +1,47 @@
+body {
+    #cntctfrm_contact_form {
+        input:not([type=submit]):not([type=checkbox]),
+        textarea {
+            border-radius: 3px;
+            width: 100%;
+            border: 1px solid #d9d9d9;
+            padding: 3px 5px;
+        }
+
+        & > div {
+            width:80%;
+            margin: 0 0 5px;
+
+            &:last-of-type {
+                width: 100%;
+                text-align: center !important;
+            }
+        }
+
+        input[type=submit]{
+            @extend .btn;
+            @extend .btn-info;
+            margin-left: auto;
+            margin-right: auto;
+        }
+    }
+}
+
+body.contact {
+
+    input[type=text], input[type=email], textarea {
+
+        background-color:#cecece;
+        border: 1px solid #949494;
+    }
+}
+
+@media (max-width: $screen-sm-min) {
+    body {
+        #cntctfrm_contact_form {
+            & > div {
+                width: 100%;
+            }
+        }
+    }
+}

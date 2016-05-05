@@ -1,0 +1,15 @@
+// Define global variables to be used to make our life easier
+$color-normal: #6F6F6F;
+$color-title: #2C3740;
+$link-normal: #0084BB;
+$link-secondary: #8b8b8b;
+$experimental-support-for-svg: true;
+$icon-font-path: "../fonts/";
+
+// Header colors
+$headerColor1: #2986d1;
+$headerColor2: #2986d1;
+$headerColor3: #1867be;
+$headerColor1D: darken($headerColor1, 8%);
+$headerColor2D: darken($headerColor2, 8%);
+$headerColor3D: darken($headerColor3, 8%);

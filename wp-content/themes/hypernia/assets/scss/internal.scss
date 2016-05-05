@@ -1,0 +1,103 @@
+body:not(.home) {
+    .date-meta {
+        font-size: 14px;
+        font-weight: bold;
+    }
+
+    .post-image {
+        width: 100%;
+        display: block;
+        margin-bottom: 20px;
+    }
+
+    .news-archive {
+        .news-header {
+            background-color:#b6b6b6;
+            text-align: center;
+            padding: 5px 0;
+            color: #000;
+            font-weight:bold;
+            font-size: 14px;
+        }
+
+        .news-list {
+            background-color: #d8d8d8;
+            padding: 10px;
+
+            .archive-year {
+                color: #221f1f;
+                font-style: italic;
+                font-weight: bold;
+                font-size: 15px;
+                margin-bottom: 5px;
+            }
+
+            .archive-link + .archive-year {
+                margin-top: 10px;
+            }
+
+            .archive-link {
+                color: #787878;
+
+                i {
+                    color: #d74e08;
+                }
+
+                a {
+                    color: #221f1f;
+
+                    &:hover {
+                        color: $link-hover;
+                    }
+                }
+            }
+        }
+    }
+
+    &.blog,
+    &.archive {
+        article {
+            background-color: #d8d8d8;
+            padding: 8px 20px;
+            margin-bottom: 15px;
+
+            h2 {
+                font-size: 14px;
+                margin: 0 0 2px;
+
+                a {
+                    text-transform: uppercase;
+                    color: #221f1f;
+
+                    &:hover {
+                        color: $link-hover;
+                    }
+                }
+
+                time {
+                    margin-left: 3px;
+                    font-size: 11px;
+                    font-weight: normal;
+                }
+            }
+
+            .read-more {
+                font-weight: bold;
+
+                i {
+                    font-size: 11px;
+                }
+            }
+        }
+    }
+
+    &.contact {
+        .form-group {
+            > div {
+                > div {
+                    text-align: center;
+                }
+            }
+        }
+    }
+}

@@ -1,0 +1,112 @@
+#games-list {
+    .main-bg {
+        padding-left: 0;
+        padding-right: 0;
+        padding-bottom: 12px;
+    }
+
+    .content-padding {
+        padding-left: 22px;
+        padding-right: 22px;
+    }
+
+    .table-games {
+        margin: 0;
+
+        tbody {
+            tr {
+                td {
+                    background: #ebebeb;
+
+                    .icon-bg {
+                        background-color: #f2f2f2;
+                    }
+                }
+            }
+
+            tr:nth-child(2n+1) {
+                td {
+                    background: transparent;
+                }
+            }
+
+            td {
+                border-top: none;
+                padding: 0;
+
+                &:first-of-type {
+                    a {
+                        padding-left: 22px;
+                    }
+                }
+
+                &:last-of-type {
+                    a {
+                        padding-right: 22px;
+                    }
+                }
+            }
+
+            a {
+                display: block;
+                overflow: hidden;
+                padding: 8px 22px;
+                font-weight: bold;
+
+                &:hover {
+                    .title {
+                        color: #da5042;
+                    }
+
+                    .arrow {
+                        color: #FFFFFF;
+                        @include gradient-vertical(#e65748,#dc3b2e);
+                    }
+                }
+
+                .col-xs-6 {
+                    padding: 0;
+                }
+            }
+
+            .icon {
+                height: 28px;
+                width: 28px;
+                position: relative;
+                border-radius: 5px;
+                margin-right: 10px;
+                @include gradient-vertical(#dfdfdf, rgba(223, 223, 223, 0));
+
+                .icon-bg {
+                    margin: 2px 0 0 2px;
+                    width: 24px;
+                    height: 24px;
+                    border-radius: 5px;
+                    text-align: center;
+                    background: #ebebeb no-repeat center center;
+                }
+            }
+
+            .title {
+                padding-top: 3px;
+                margin-right: 10px;
+                color: #6f6f6f;
+            }
+
+            .arrow {
+                margin-top: 4px;
+                padding: 3px 10px;
+                border-radius: 5px;
+                display: block;
+                color: #efcfcb;
+                font-size: 10px;
+                @include gradient-vertical(#e9beba,#e6b6b2);
+            }
+
+            .price {
+                padding-top: 3px;
+                margin-right: 10px;
+            }
+        }
+    }
+}

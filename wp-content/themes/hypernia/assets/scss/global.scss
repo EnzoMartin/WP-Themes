@@ -1,0 +1,329 @@
+/*!
+ * Roots 6.5.2
+ */
+
+/* ==========================================================================
+   Base
+   ========================================================================== */
+
+body {
+    padding: 30px 0 0;
+    background-color: #cecece;
+    font-family: 'Open Sans', sans-serif;
+    color: $color-normal;
+}
+
+.center {
+    text-align: center;
+}
+
+.capitalize {
+    text-transform: capitalize;
+}
+
+.home {
+    .page-header {
+        display: none;
+    }
+}
+
+.separator {
+    background: none #242424;
+    height: 12px;
+}
+
+.wrap {
+    position: relative;
+    border-bottom: 1px solid #767676;
+
+    &:after {
+        content: '';
+        position: absolute;
+        bottom: -10px;
+        left: 0;
+        right: 0;
+        height: 10px;
+        width: 100%;
+        display: block;
+        @include gradient-vertical(rgba(118,118,118,0.8),rgba(118,118,118,0));
+    }
+}
+
+.rule {
+    width: 100%;
+    padding: 0 10px;
+    margin: 10px 0;
+
+    .wing-wpr {
+        position: relative;
+        text-align: center;
+    }
+
+    img {
+
+    }
+
+    .wing {
+        position: absolute;
+        top: 9px;
+        width: 50%;
+        border-top: 1px solid #aeaeae;
+        padding: 0 0 1px;
+        border-bottom: 2px solid #f58323;
+
+        &:after {
+            position: absolute;
+            content: '';
+            width: 50%;
+            height: 2px;
+            bottom: -2px;
+        }
+    }
+
+    .left {
+        left: -10px;
+
+        &:after {
+            left: 0;
+            @include gradient-horizontal(rgba(255,255,255,1),rgba(255,255,255,0));
+        }
+    }
+
+    .right {
+        right: -10px;
+
+        &:after {
+            right: 0;
+            @include gradient-horizontal(rgba(255,255,255,0),rgba(255,255,255,1));
+        }
+    }
+}
+
+.page-header {
+    border: none;
+    margin: 20px 0;
+    padding: 0;
+
+    h1 {
+        border:none;
+        padding-bottom: 0;
+    }
+}
+
+#page-bg {
+    background: #FFF;
+
+    .content {
+        padding: 10px;
+    }
+}
+
+#page-subheading {
+    background: #e1e1e1;
+    border-bottom: 6px solid #242424;
+    padding: 12px 10px;
+
+    h2 {
+        margin: 0;
+        color: #000;
+        font-size: 15px;
+        font-style: italic;
+    }
+}
+
+.bubble {
+    width: 100%;
+
+    td {
+        vertical-align: top;
+    }
+
+    .bubble-image {
+        max-width: 200px;
+        width: 200px;
+        text-align: center;
+        vertical-align: middle;
+    }
+
+    .bubble-image + .bubble-wrapper {
+        padding-left: 30px;
+    }
+
+    .bubble-content {
+        background-color: #cecece;
+        border-radius: 25px;
+        padding: 15px;
+
+        h3 {
+            margin-top: 0;
+            color: #242424;
+            font-weight: normal;
+            font-style: italic;
+        }
+
+        .bubble-text {
+            padding: 0 12px;
+        }
+    }
+
+    &.quote {
+        .bubble-image {
+            vertical-align: top;
+        }
+
+        .bubble-image + .bubble-wrapper {
+            .bubble-content {
+                position: relative;
+                min-height: 55px;
+                border-radius: 0 25px 25px 25px;
+
+                &:after {
+                    content: '';
+                    position: absolute;
+                    top: 0;
+                    left: -37px;
+                    width: 0;
+                    border-top: 0 outset transparent;
+                    border-bottom: 40px outset transparent;
+                    border-right: 40px solid #cecece;
+                }
+            }
+        }
+
+        i.fa {
+            vertical-align: top;
+
+            &.fa-quote-right {
+                margin-left: 5px;
+            }
+
+            &.fa-quote-left {
+                margin-right: 5px;
+            }
+        }
+
+        h6 {
+            color: #242424;
+            font-style: italic;
+            font-weight: bold;
+            font-size: 16px;
+            padding-right: 25px;
+            text-align: right;
+            margin-top: 5px;
+        }
+    }
+}
+
+#purepings-alert {
+    margin-top: -30px;
+    border-radius: 0;
+    border-left: none;
+    border-right: none;
+    border-top: none;
+}
+
+/* columns of same height styles */
+.container-xs-height {
+    display:table;
+    padding-left:0px;
+    padding-right:0px;
+}
+.row-xs-height {
+    display:table-row;
+}
+.col-xs-height {
+    display:table-cell;
+    float:none;
+}
+
+@media (max-width: $screen-xs-max) {
+    body {
+        padding: 0;
+    }
+
+    #purepings-alert {
+        margin: 0;
+    }
+}
+
+@media (min-width: $screen-sm-min) {
+    .container-sm-height {
+        display:table;
+        padding-left:0px;
+        padding-right:0px;
+    }
+    .row-sm-height {
+        display:table-row;
+    }
+    .col-sm-height {
+        display:table-cell;
+        float:none;
+    }
+}
+
+@media (min-width: $screen-md-min) {
+    .container-md-height {
+        display:table;
+        padding-left:0px;
+        padding-right:0px;
+    }
+    .row-md-height {
+        display:table-row;
+    }
+    .col-md-height {
+        display:table-cell;
+        float:none;
+    }
+}
+
+@media (min-width: $screen-lg-min) {
+    .container-lg-height {
+        display:table;
+        padding-left:0px;
+        padding-right:0px;
+    }
+    .row-lg-height {
+        display:table-row;
+    }
+    .col-lg-height {
+        display:table-cell;
+        float:none;
+    }
+}
+
+
+/* ==========================================================================
+   Primary Content
+   ========================================================================== */
+
+.main {
+    background-color: #FFFFFF;
+}
+
+/* Gallery Shortcode */
+.gallery-row {
+    padding: 15px 0;
+}
+
+/* ==========================================================================
+   WordPress Generated Classes
+   See: http://codex.wordpress.org/CSS#WordPress_Generated_Classes
+   ========================================================================== */
+
+.aligncenter {
+    display: block;
+    margin: 0 auto;
+}
+
+.alignleft {
+    float: left;
+}
+
+.alignright {
+    float: right;
+}
+
+figure.alignnone {
+    margin-left: 0;
+    margin-right: 0;
+}

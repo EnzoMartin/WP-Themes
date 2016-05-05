@@ -1,0 +1,203 @@
+/*!
+ * Roots 6.5.2
+ */
+
+/* ==========================================================================
+   Base
+   ========================================================================== */
+
+body {
+    background-color: #0f1216;
+    font-family: 'Open Sans', sans-serif;
+    color: $color-normal;
+}
+
+.center {
+    text-align: center;
+}
+
+.capitalize {
+    text-transform: capitalize;
+}
+
+@media (max-width: $screen-md-min) {
+    #page-bg {
+        margin-top: -5px;
+    }
+}
+
+/* ==========================================================================
+   Content
+   ========================================================================== */
+
+.feature-box {
+    border-bottom: 1px solid #d5d5d5;
+    position: relative;
+    min-height: 60px;
+    margin-bottom: 15px;
+
+    a {
+        display: block;
+
+        p {
+            color:#6f6f6f;
+        }
+
+        i {
+            color: #FFF;
+        }
+
+        &:hover {
+            text-decoration: none;
+
+            h4 {
+                text-decoration: none;
+            }
+
+            p {
+                color: #0084bb;
+            }
+        }
+
+        &:active {
+            text-decoration: none;
+
+            h4 {
+                text-decoration: none;
+            }
+        }
+    }
+
+    .icon {
+        height: 50px;
+        width: 50px;
+        position: relative;
+        border-radius: 5px;
+        @include gradient-vertical(#cecece,rgba(206,206,206,0));
+
+        .icon-bg {
+            margin: 2px 0 0 2px;
+            width: 46px;
+            height: 46px;
+            border-radius: 5px;
+            @include gradient-vertical(#43a2ee,#2987e7);
+            color: #FFFFFF;
+            text-align: center;
+
+            i {
+                font-size: 21px;
+                padding-top: 12px;
+            }
+        }
+    }
+
+    .text {
+        margin-left: 65px;
+
+        h4 {
+            margin: 0 0 5px;
+        }
+    }
+
+    &.single {
+        .text {
+            display: table;
+
+            h4 {
+                height: 48px;
+                display: table-cell;
+                vertical-align: middle;
+            }
+
+            p {
+                display: none;
+            }
+        }
+    }
+
+    &:after {
+        content: "";
+        position: absolute;
+        width: 100%;
+        bottom: -2px;
+        left: 0;
+        border-bottom: 1px solid #FFFFFF;
+    }
+}
+
+.home-box {
+    i {
+        margin-top: 1px;
+    }
+
+    .panel-footer {
+        overflow: hidden;
+        position: relative;
+    }
+
+    .side-arrow {
+        @include gradient-vertical(#054c82,#00366e);
+        border: 2px solid #CCD1D6;
+        border-radius: 30px;
+        bottom: -16px;
+        color: #FFFFFF;
+        font-size: 11px;
+        height: 40px;
+        position: absolute;
+        right: -23px;
+        text-align: center;
+        width: 46px;
+
+        &:hover {
+            @include gradient-vertical(#055e9a, #003c8a);
+            border: 2px solid #b3b8bd;
+        }
+
+
+        i {
+            position: absolute;
+            top: 7px;
+            left: 8px;
+        }
+    }
+}
+
+.clear {
+    clear:both;
+}
+
+/* ==========================================================================
+   Primary Content
+   ========================================================================== */
+
+.main {
+    background-color: #FFFFFF;
+}
+
+/* Gallery Shortcode */
+.gallery-row {
+    padding: 15px 0;
+}
+
+/* ==========================================================================
+   WordPress Generated Classes
+   See: http://codex.wordpress.org/CSS#WordPress_Generated_Classes
+   ========================================================================== */
+
+.aligncenter {
+    display: block;
+    margin: 0 auto;
+}
+
+.alignleft {
+    float: left;
+}
+
+.alignright {
+    float: right;
+}
+
+figure.alignnone {
+    margin-left: 0;
+    margin-right: 0;
+}

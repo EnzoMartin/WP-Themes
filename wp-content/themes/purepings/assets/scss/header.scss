@@ -1,0 +1,180 @@
+header {
+    z-index: 2;
+
+    a {
+        color: #9D9D9D;
+    }
+
+    .navbar-brand {
+        padding-top: 24px;
+        padding-bottom: 28px;
+        height: auto;
+    }
+
+    &.navbar-default {
+        background-color: #FFFFFF;
+        @include gradient-vertical-three-colors(rgba(255,255,255,0.2),rgba(255,255,255,0.2),65%,rgba(217,217,217,0.2));
+        background-clip: padding-box;
+        border-bottom: 5px solid rgba(0,0,0,0.1);
+
+        .navbar-toggle {
+            margin-top: 20px;
+        }
+
+        .navbar-nav {
+            & > li {
+                & > a {
+                    background: none transparent;
+                }
+
+                &.active {
+                    & > a {
+                        font-weight: bold;
+                        color: $link-normal;
+                        background: none transparent;
+
+                        &:hover {
+                            background: none;
+                        }
+                    }
+                }
+
+                &.open {
+                    & > a {
+                        color: #FFFFFF;
+                        @include gradient-vertical-three-colors($headerColor1D,$headerColor2D,65%,$headerColor3D);
+
+                        &:active,
+                        &:focus {
+                            color: #c9c9c9;
+                        }
+
+                        &:hover {
+                            color: #e1e1e1;
+                            @include gradient-vertical-three-colors($headerColor1D,$headerColor2D,65%,$headerColor3D);
+                        }
+                    }
+
+                    li {
+                        a {
+                            padding-top: 5px;
+                            padding-bottom: 6px;
+                        }
+
+                        &.active {
+                            a {
+                                color: #FFFFFF;
+                                @include gradient-vertical-three-colors($headerColor1D,$headerColor2D,65%,$headerColor3D);
+                            }
+                        }
+                    }
+                }
+            }
+        }
+    }
+}
+
+@media (max-width: $screen-sm-max) {
+    header {
+        &.navbar-default {
+            .navbar-form {
+                width: 100%;
+                margin: 0;
+            }
+
+
+            .navbar-nav {
+                &.login-nav {
+                    & > li {
+                        &.open {
+                            ul {
+                                padding-top: 0;
+                            }
+                        }
+                    }
+                }
+            }
+        }
+    }
+}
+
+@media (min-width: $screen-sm-min) {
+    header {
+        &.navbar-default {
+
+            .navbar-form {
+                min-width: 250px;
+            }
+
+            .navbar-nav {
+                a {
+                    font-size: 13px;
+                }
+
+                & > li {
+                    & > a {
+                        margin: 0;
+                        padding: 27px 15px;
+                        position: relative;
+
+                        &:after {
+                            position: absolute;
+                            top: 27px;
+                            left: 0;
+                            border-left: 1px solid #d5d5d5;
+                            content: "";
+                            height: 20px;
+                            width: 1px;
+                        }
+                    }
+
+                    &.open > a {
+                        &:after{
+                            display: none;
+                        }
+                    }
+
+
+                }
+
+                &.login-nav {
+                    & > li {
+                        & > a {
+                            padding-top: 26px;
+                            padding-bottom: 28px;
+                            margin: 0;
+                            color: #FFFFFF;
+
+                            @include gradient-vertical-three-colors($headerColor1, $headerColor2, 65%, $headerColor3);
+
+                            &:hover {
+                                @include gradient-vertical-three-colors($headerColor1D, $headerColor2D, 65%, $headerColor3D);
+                            }
+
+                            &:after {
+                                display: none;
+                            }
+
+                            .caret {
+                                position: relative;
+                                margin-left: 10px;
+
+                                &:before {
+                                    border-left: 1px solid #34373B;
+                                    border-right: 1px solid #3b86ce;
+                                    content: "";
+                                    display: block;
+                                    height: 15px;
+                                    left: -11px;
+                                    position: absolute;
+                                    top: -10px;
+                                    width: 1px;
+                                }
+                            }
+                        }
+                    }
+                }
+            }
+        }
+    }
+}

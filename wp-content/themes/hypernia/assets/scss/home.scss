@@ -1,0 +1,120 @@
+body.home {
+    header.navbar {
+        margin-bottom: 0;
+    }
+
+    #home-widgets {
+        background-color: #FFF;
+    }
+
+    #news {
+        .post {
+            margin-bottom: 15px;
+            overflow: hidden;
+
+            h3 {
+                font-size: 16px;
+                margin: 0;
+
+                a {
+                    font-weight: bold;
+                    color: #000;
+                    text-transform: uppercase;
+                    font-family: 'Open Sans',sans-serif;
+
+                    &:hover {
+                        color: $link-hover;
+                    }
+                }
+
+                time {
+                    margin-left: 3px;
+                    font-size: 11px;
+                    font-weight: normal;
+                }
+            }
+
+            .read-more {
+                font-weight: bold;
+
+                i {
+                    font-size: 11px;
+                }
+            }
+
+            .image {
+                float:left;
+                margin-right: 15px;
+            }
+
+            .text {
+                float: left;
+            }
+        }
+    }
+
+    #events {
+        background-color: #eeeeee;
+        position: relative;
+
+        &:after {
+            content: '';
+            position: absolute;
+            bottom: 0;
+            right: 0;
+            top: 0;
+            width: 1px;
+            border-right: 1px solid rgba(206,206,206,1);
+            display: block;
+        }
+
+        a {
+            color: #221f1f;
+
+            &:hover {
+                color: $link-hover;
+            }
+        }
+
+        .date {
+            display: inline-block;
+            border: 1px solid #aa4604;
+            background-color: #db4f00;
+            color: #FFF;
+            padding: 0 3px 1px;
+            margin-right: 5px;
+            text-shadow: 1px 1px #000;
+            min-width: 50px;
+        }
+
+        li,
+        .eo-event-future {
+            margin-bottom: 5px;
+        }
+    }
+
+    .home-widget {
+        padding-bottom: 15px;
+
+        h4 {
+            margin-top: 0;
+            padding-top: 10px;
+            font-size: 21px;
+            color: #d74800;
+
+            span {
+                color: #221f1f;
+            }
+        }
+
+        ul {
+            margin: 0;
+            padding: 0;
+
+            li {
+                margin-bottom: 2px;
+                list-style: none;
+            }
+        }
+    }
+}

@@ -1,0 +1,17 @@
+.wp-admin {
+    select[multiple] {
+        min-height: 150px;
+        min-width: 300px;
+    }
+}
+
+#custom-options {
+    textarea {
+        width: 500px;
+        height: 200px;
+    }
+
+    input {
+        width: 300px;
+    }
+}

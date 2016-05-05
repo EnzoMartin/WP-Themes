@@ -1,0 +1,88 @@
+// Also used for the editor styles
+
+@import "variables";
+@import "bootstrap/mixins";
+@import url(https://fonts.googleapis.com/css?family=Open+Sans:400,700,400italic,700italic);
+@import url(https://fonts.googleapis.com/css?family=Oswald);
+
+#tinymce body,
+body {
+    font-family: 'Open Sans', sans-serif;
+    color: $color-normal;
+    font-size:13px;
+    font-weight: normal;
+}
+
+// Text
+a {
+    color: $link-normal;
+
+    &:hover {
+        color: $link-hover;
+    }
+}
+
+#tinymce h1,#tinymce h2,#tinymce h3,#tinymce h4,#tinymce h5,#tinymce h6,
+h1,h2,h3,h4,h5,h6 {
+    color: #808080;
+    font-weight: bold;
+    font-family: 'Open Sans', sans-serif;
+
+    &.oswald {
+        font-family: 'Oswald','Open Sans', sans-serif;
+    }
+}
+
+#tinymce h1,
+h1 {
+    font-size: 25px;
+    color: #cecece;
+}
+
+#tinymce h2,
+h2 {
+    font-size: 24px;
+    color: #242424;
+}
+
+#tinymce h3,
+h3 {
+    color: #242424;
+    font-size: 20px;
+}
+
+#tinymce h4,
+h4 {
+    color: #797979;
+    font-size: 16px;
+}
+
+#tinymce h5,
+h5 {
+    color: #797979;
+    font-size: 15px;
+    font-weight: normal;
+}
+
+#tinymce h6,
+h6 {
+    font-size: 14px;
+    color: #242424;
+    font-weight: normal;
+}
+
+
+// Elements
+hr {
+    border:none;
+    position: relative;
+
+    &:before {
+        content:"";
+        @include gradient-horizontal-three-colors(rgba(158,158,158,0), rgba(158,158,158,1), 50%, rgba(158,158,158,0));
+        position: relative;
+        top: 0;
+        display: block;
+        height: 1px;
+    }
+}

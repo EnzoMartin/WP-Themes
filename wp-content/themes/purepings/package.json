@@ -1,0 +1,31 @@
+{
+    "name": "roots",
+    "version": "6.5.2",
+    "author": "Ben Word <ben@benword.com>",
+    "homepage": "http://roots.io",
+    "repository": {
+        "type": "git",
+        "url": "git://github.com/roots/roots.git"
+    },
+    "bugs": {
+        "url": "https://github.com/roots/roots/issues"
+    },
+    "licenses": [
+        {
+            "type": "MIT",
+            "url": "http://opensource.org/licenses/MIT"
+        }
+    ],
+    "devDependencies": {
+        "bower": "latest",
+        "grunt": "latest",
+        "grunt-contrib-clean": "latest",
+        "grunt-contrib-jshint": "latest",
+        "grunt-contrib-uglify": "latest",
+        "grunt-contrib-watch": "latest",
+        "grunt-sass": "latest",
+        "grunt-bower-task": "latest",
+        "grunt-bowercopy": "latest",
+        "grunt-wp-version": "latest"
+    }
+}

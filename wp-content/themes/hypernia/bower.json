@@ -1,0 +1,35 @@
+{
+    "name": "roots-theme",
+    "private": true,
+    "ignore": [
+        "**/.*",
+        "node_modules",
+        "bower_components"
+    ],
+    "dependencies": {
+        "bootstrap": "3.x",
+        "bootstrap-sass-official": "3.x",
+        "font-awesome": "4.x"
+    },
+    "exportsOverride": {
+        "font-awesome": {
+            "fonts": "fonts",
+            "": "css/font-awesome.min.css"
+        },
+        "bootstrap": {
+            "": [
+                "./dist/css/bootstrap.css",
+                "./dist/css/bootstrap.css.map",
+                "./dist/js/bootstrap.js",
+                "./dist/fonts/glyphicons-halflings-regular.eot",
+                "./dist/fonts/glyphicons-halflings-regular.svg",
+                "./dist/fonts/glyphicons-halflings-regular.ttf",
+                "./dist/fonts/glyphicons-halflings-regular.woff"
+            ]
+        },
+        "bootstrap-sass-official": {
+            "bootstrap": "assets/stylesheets/bootstrap/*.scss",
+            "bootstrap/mixins": "assets/stylesheets/bootstrap/mixins/*.scss"
+        }
+    }
+}
